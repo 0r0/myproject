@@ -16,5 +16,8 @@ public class BinarySearchImpl {
         return -1;
 
     }
+    private int[] sortedArray(int[] numbers) {
+        return null;
 
+    }
 }
