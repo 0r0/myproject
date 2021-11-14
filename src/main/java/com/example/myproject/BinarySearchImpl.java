@@ -2,8 +2,22 @@ package com.example.myproject;
 
 import org.springframework.stereotype.Service;
 
-@Service
+
 public class BinarySearchImpl {
+
+    private SortAlgorithm sortAlgorithm;
+
+    public BinarySearchImpl(SortAlgorithm sortAlgorithm) {
+        this.sortAlgorithm = sortAlgorithm;
+    }
+
+
+
+    public int binarySearch(int[] numbers, int numberToSearchFor) {
+
+        int[] sortedNumbers = sortAlgorithm.sort(numbers);
+        System.out.println(sortAlgorithm);
+        return 3;
     //sort
     //search
 //    public int binarySearch(int[] numbers, int left, int right, int numberToSearchFor) {
@@ -24,10 +38,6 @@ public class BinarySearchImpl {
 //
 //    }
 
-    public int binarySearch(int[] numbers, int numberToSearchFor) {
 
-        BubbleSortAlgorithm bubbleSortAlgorithm = new BubbleSortAlgorithm();
-        int[] sortedNumbers = bubbleSortAlgorithm.sort(numbers);
-        return 3;
     }
 }
