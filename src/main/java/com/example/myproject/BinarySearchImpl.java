@@ -25,6 +25,9 @@ public class BinarySearchImpl {
 //    }
 
     public int binarySearch(int[] numbers,int numberToSearchFor){
+
+        BubbleSortAlgorithm bubbleSortAlgorithm= new BubbleSortAlgorithm();
+        bubbleSortAlgorithm.sort(numbers);
         return 3;
     }
 }
