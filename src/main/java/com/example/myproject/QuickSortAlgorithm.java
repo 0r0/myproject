@@ -1,6 +1,6 @@
 package com.example.myproject;
 
-public class QuickSort {
+public class QuickSortAlgorithm {
     public int[] sort(int[] numbers){
         return numbers;
     }
