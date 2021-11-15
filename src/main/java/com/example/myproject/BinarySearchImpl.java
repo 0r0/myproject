@@ -1,10 +1,13 @@
 package com.example.myproject;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
-
+@Component
 public class BinarySearchImpl {
 
+    @Autowired
     private SortAlgorithm sortAlgorithm;
 
     public BinarySearchImpl(SortAlgorithm sortAlgorithm) {
@@ -40,4 +43,8 @@ public class BinarySearchImpl {
 
 
     }
+
+//    public void setSortAlgorithm(SortAlgorithm sortAlgorithm) {
+//        this.sortAlgorithm = sortAlgorithm;
+//    }
 }
