@@ -44,7 +44,7 @@ public class BinarySearchImpl {
 
     }
 
-    public void setSortAlgorithm(SortAlgorithm sortAlgorithm) {
-        this.sortAlgorithm = sortAlgorithm;
-    }
+//    public void setSortAlgorithm(SortAlgorithm sortAlgorithm) {
+//        this.sortAlgorithm = sortAlgorithm;
+//    }
 }
