@@ -6,13 +6,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 
 @SpringBootApplication
-public class MyprojectApplication {
+public class MyprojectBasicApplication {
 
     public static void main(String[] args) {
 //        BinarySearchImpl binarySearch=new BinarySearchImpl(new BubbleSortAlgorithm());
 //
 //        System.out.println(result);
-        ApplicationContext applicationContext = SpringApplication.run(MyprojectApplication.class, args);
+        ApplicationContext applicationContext = SpringApplication.run(MyprojectBasicApplication.class, args);
         BinarySearchImpl binarySearch1=applicationContext.getBean(BinarySearchImpl.class);
         BinarySearchImpl binarySearch2=applicationContext.getBean(BinarySearchImpl.class);
         BinarySearchImpl binarySearch3=applicationContext.getBean(BinarySearchImpl.class);
