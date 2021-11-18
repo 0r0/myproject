@@ -1,4 +1,4 @@
-package com.example.myproject;
+package com.example.myproject.basic;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
