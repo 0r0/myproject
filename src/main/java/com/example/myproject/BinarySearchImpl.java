@@ -1,13 +1,18 @@
 package com.example.myproject;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.config.ConfigurableBeanFactory;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 @Component
+
 public class BinarySearchImpl {
 
     @Autowired
+    @Qualifier("bubble")
     private SortAlgorithm sortAlgorithm;
 
 //    public BinarySearchImpl(SortAlgorithm sortAlgorithm) {
