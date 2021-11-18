@@ -12,8 +12,13 @@ public class MyprojectApplication {
 //
 //        System.out.println(result);
         ApplicationContext applicationContext = SpringApplication.run(MyprojectApplication.class, args);
-        BinarySearchImpl binarySearch=applicationContext.getBean(BinarySearchImpl.class);
-        int result=binarySearch.binarySearch(new int[]{12,4,6},3);
+        BinarySearchImpl binarySearch1=applicationContext.getBean(BinarySearchImpl.class);
+        BinarySearchImpl binarySearch2=applicationContext.getBean(BinarySearchImpl.class);
+        BinarySearchImpl binarySearch3=applicationContext.getBean(BinarySearchImpl.class);
+        System.out.println(binarySearch1);
+        System.out.println(binarySearch2);
+        System.out.println(binarySearch3);
+        int result=binarySearch1.binarySearch(new int[]{12,4,6},3);
         System.out.println(result);
 
     }
