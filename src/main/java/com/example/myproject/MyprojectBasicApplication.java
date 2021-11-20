@@ -26,6 +26,7 @@ public class MyprojectBasicApplication {
         System.out.println(binarySearch3);
         int result=binarySearch1.binarySearch(new int[]{12,4,6},3);
         System.out.println(result);
+        applicationContext.close();
 
     }
 
