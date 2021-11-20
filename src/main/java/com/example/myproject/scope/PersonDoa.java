@@ -1,10 +1,10 @@
 package com.example.myproject.scope;
 
-import com.example.myproject.scope.JdbcConnection;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 
-@Component
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+@Repository
 public class PersonDoa {
     @Autowired
     JdbcConnection jdbcConnection;
