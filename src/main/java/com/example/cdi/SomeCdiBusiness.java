@@ -3,16 +3,19 @@ package com.example.cdi;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-@Component
+import javax.inject.Inject;
+import javax.inject.Named;
+
+@Named
 public class SomeCdiBusiness {
-    @Autowired
+    @Inject
     SomeCdiDao someCdiDao;
 
     public SomeCdiDao getSomeCdiDao() {
         return someCdiDao;
     }
 
-    public void setSomeCDIDAO(SomeCdiDao someCdiDao) {
+    public void setSomeCdiDao(SomeCdiDao someCdiDao) {
         this.someCdiDao = someCdiDao;
     }
 }
