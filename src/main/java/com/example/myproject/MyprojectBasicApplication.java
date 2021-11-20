@@ -16,17 +16,17 @@ public class MyprojectBasicApplication {
 //        BinarySearchImpl binarySearch=new BinarySearchImpl(new BubbleSortAlgorithm());
 //
 //        System.out.println(result);
-        AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(MyprojectBasicApplication.class);
+        try(AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(MyprojectBasicApplication.class)) {
 //                SpringApplication.run(MyprojectBasicApplication.class, args);
-        BinarySearchImpl binarySearch1=applicationContext.getBean(BinarySearchImpl.class);
-        BinarySearchImpl binarySearch2=applicationContext.getBean(BinarySearchImpl.class);
-        BinarySearchImpl binarySearch3=applicationContext.getBean(BinarySearchImpl.class);
-        System.out.println(binarySearch1);
-        System.out.println(binarySearch2);
-        System.out.println(binarySearch3);
-        int result=binarySearch1.binarySearch(new int[]{12,4,6},3);
-        System.out.println(result);
-        applicationContext.close();
+            BinarySearchImpl binarySearch1 = applicationContext.getBean(BinarySearchImpl.class);
+            BinarySearchImpl binarySearch2 = applicationContext.getBean(BinarySearchImpl.class);
+            BinarySearchImpl binarySearch3 = applicationContext.getBean(BinarySearchImpl.class);
+            System.out.println(binarySearch1);
+            System.out.println(binarySearch2);
+            System.out.println(binarySearch3);
+            int result = binarySearch1.binarySearch(new int[]{12, 4, 6}, 3);
+            System.out.println(result);
+        }
 
     }
 
